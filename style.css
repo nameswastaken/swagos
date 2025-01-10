@@ -76,7 +76,7 @@ body {
   height:35px;
   width:35px;
   margin-left:50%;
-  ovetflow:hidden;
+  overflow:hidden;
   margin-top:4px;
   transition:.3s linear;
   }
