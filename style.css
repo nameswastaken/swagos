@@ -19,7 +19,7 @@ body {
   color: #ffff;
   height: 100px;
   width: 100px;
-  border-radius: 5px;
+  border-radius: 15px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -55,6 +55,7 @@ body {
   width: 35px;
   background: none;
 }
+
 #close2 {
   color: #ffff;
   margin-top: -18px;
@@ -64,13 +65,14 @@ body {
   width: 100%;
   border-radius: 13px 13px 0px 0px;
 }
+
 #close:hover {
   background: #880808;
 }
 
 #close1 {
   color: #ffff;
-  margin-top: -18px;
+  margin-top: -8px;
   background: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(10px);
   height: 20px;
@@ -95,6 +97,7 @@ body {
   margin-top: 0.3%;
   transition: 0.3s linear;
 }
+
 #settings {
   cursor: pointer;
   height: 37px;
@@ -102,10 +105,12 @@ body {
   overflow: hidden;
   transition: 0.3s linear;
 }
+
 #settings:hover {
   width: 40px;
   height: 40px;
 }
+
 #catapp:hover {
   width: 38px;
   height: 37px;
@@ -116,6 +121,7 @@ body {
     transform: translate(-50%, -50%) scale(1);
     opacity: 1;
   }
+
   100% {
     transform: translate(-50%, -50%) scale(0);
     opacity: 0;
@@ -127,6 +133,7 @@ body {
     transform: translate(-50%, -50%) scale(0);
     opacity: 0;
   }
+
   100% {
     transform: translate(-50%, -50%) scale(1);
     opacity: 1;
@@ -251,7 +258,7 @@ body {
 }
 
 .settings-item input {
-  width: 100%;
+  width: 90%;
   padding: 10px;
   border-radius: 6px;
   border: 1px solid #888888;
@@ -264,4 +271,3 @@ body {
   outline: none;
   border-color: #ff3b30;
 }
-

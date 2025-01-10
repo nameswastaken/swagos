@@ -70,12 +70,12 @@ function showSection(sectionId) {
   const section = document.getElementById(sectionId);
   const allSections = document.querySelectorAll('.settings-section');
 
-  allSections.forEach(function(sec) {
+  allSections.forEach(function (sec) {
     if (sec !== section) {
       sec.style.maxHeight = null;
     }
   });
-  
+
   if (section.style.maxHeight) {
     section.style.maxHeight = null;
   } else {
@@ -100,11 +100,11 @@ function checkLocalStorage() {
   }
 }
 
-document.getElementById("wallpaper").addEventListener("change", function(e) {
+document.getElementById("wallpaper").addEventListener("change", function (e) {
   const file = e.target.files[0];
   if (file) {
     const reader = new FileReader();
-    reader.onload = function(event) {
+    reader.onload = function (event) {
       const wallpaper = event.target.result;
       document.body.style.backgroundImage = "url('" + wallpaper + "')";
       setLocalStorage("wallpaper", "url('" + wallpaper + "')");
