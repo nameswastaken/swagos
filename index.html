@@ -17,10 +17,32 @@
     </h1>
 </div>
 
+<div id="settings_app" class="settings-container">
+  <div id="settings_header" class="settings-header">
+    <span class="settings-title">Settings</span>
+    <div id="close_settings" class="close-button" onclick="closesettings()">x</div>
+  </div>
+  <div class="settings-sidebar">
+    <ul>
+      <li onclick="showSection('personalization')">Personalization</li>
+    </ul>
+  </div>
+  <div class="settings-content">
+    <div id="personalization" class="settings-section">
+      <h2>Personalization</h2>
+      <div class="settings-item">
+        <label for="wallpaper">Wallpaper</label>
+        <input type="file" id="wallpaper">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
 <div id="taskbar">
-
   <img onclick="openapp1()" style="cursor:pointer;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuQhUHWTNFAa7Tu8Bp6dPJLAkafGRdH11Bh4xlSzgOdA&s" id="catapp">
-
+  <img onclick="opensettings()" src="assets\icons\settings.svg" id="settings"> 
 </div>
     <script src="script.js"></script>
   </body>
