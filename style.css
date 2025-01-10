@@ -92,7 +92,6 @@ body {
   border-radius: 50%;
   height: 35px;
   width: 35px;
-  margin-left: 50%;
   overflow: hidden;
   margin-top: 0.3%;
   transition: 0.3s linear;
@@ -142,9 +141,13 @@ body {
 
 
 #apps {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  height: fit-content;
+  width: fit-content;
+  margin: auto;
+}
+
+#apps img {
+  margin-top: 2px;
 }
 
 /*kitty*/
