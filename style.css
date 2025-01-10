@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+  overflow: hidden;
+  font-family: "Lato", serif;
+
+  font-weight: 400;
+
+  font-style: normal;
+  background-image: url('https://images.pexels.com/photos/691668/pexels-photo-691668.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+
+#app1 {
+  text-align:center;
+  background: #535353;
+  color:#ffff;
+  height:100px;
+  width:100px;
+  border-radius:0px 0px 15px 15px;
+  position: absolute;
+  animation: open .3s ease-in-out;
+}
+
+#taskbar {
+  background: rgb(0,0,0,.7);
+  backdrop-filter:blur(10px);
+  position: absolute;
+  bottom:0;
+  left:0;
+  width:100%;
+  height:45px;
+  border-radius:15px 15px 0px 0px;
+  }
+
+#soon {
+  margin-right:60px;
+}
+
+
+
+#close {
+  position:absolute;
+  right:1px;
+  transition:.3s;
+  margin-left:0px;
+  margin-top:-20px;
+  cursor:pointer;
+   border-radius:13px 13px 0px 0px;
+  height:21px;
+  width:35px;
+  background: none;
+}
+
+#close:hover {
+  background: #880808;
+}
+
+
+#close1 {
+  color:#ffff;
+  margin-top:-18px;
+  background: rgb(0,0,0,.4);
+  backdrop-filter:blur(10px);
+  height:20px;
+  width:100%;
+  border-radius:13px 13px 0px 0px;
+}
+
+#app1.gone {
+  animation: close .3s ease-in-out;
+}
+#catapp {
+  border-radius:50%;
+  height:35px;
+  width:35px;
+  margin-left:50%;
+  ovetflow:hidden;
+  margin-top:4px;
+  transition:.3s linear;
+  }
+#catapp:hover {
+  width:38px;
+  height:37px;
+  }
+
+@keyframes close {
+  0% {
+    width:100px;
+    height:100px;
+    opacity:100%;
+  }
+  100% {
+    height:0px;
+    width:0px;
+    opacity:0%;
+  }
+}
+
+@keyframes open {
+  0% {
+    width:0px;
+    height:0px;
+    opacity:0%;
+  }
+  100% {
+    height:100px;
+    width:100px;
+    opacity:100%;
+  }
+}
