@@ -102,13 +102,13 @@ body {
 }
 
 #settings:hover {
-  width: 40px;
+  width: 30px;
   height: 40px;
 }
 
 #catapp:hover {
-  width: 38px;
-  height: 37px;
+  width: 30px;
+  height: 30px;
 }
 
 @keyframes close {
@@ -140,6 +140,7 @@ body {
   height: fit-content;
   width: fit-content;
   margin: auto;
+  margin-top:3px;
 }
 
 #apps img {
@@ -149,8 +150,8 @@ body {
 /*kitty*/
 #catapp {
   border-radius: 50%;
-  height: 35px;
-  width: 35px;
+  height: 25px;
+  width: 25px;
   overflow: hidden;
   margin-top: 0.3%;
   transition: 0.3s linear;
