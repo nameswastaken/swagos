@@ -11,6 +11,11 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 }
 
 #app1 {
@@ -90,8 +95,8 @@ body {
 
 #settings {
   cursor: pointer;
-  height: 37px;
-  width: 37px;
+  height: 25px;
+  width: 25px;
   overflow: hidden;
   transition: 0.3s linear;
 }
