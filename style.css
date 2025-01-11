@@ -88,15 +88,6 @@ body {
   animation: close .3s cubic-bezier(0.4, 0.0, 0.2, 1);
 }
 
-#catapp {
-  border-radius: 50%;
-  height: 35px;
-  width: 35px;
-  overflow: hidden;
-  margin-top: 0.3%;
-  transition: 0.3s linear;
-}
-
 #settings {
   cursor: pointer;
   height: 37px;
