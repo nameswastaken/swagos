@@ -112,4 +112,16 @@ document.getElementById("wallpaper").addEventListener("change", function (e) {
     reader.readAsDataURL(file);
   }
 });
+document.getElementById("pic").addEventListener("change", function (e) {
+  const file = e.target.files[0];
+  if (file) {
+    const reader = new FileReader();
+    reader.onload = function (event) {
+      const pfp = event.target.result;
+      document.getElementById("profile_picture").src = pfp
+      setLocalStorage("profile_pic", "url('" + pfp + "')");
+    };
+    reader.readAsDataURL(file);
+  }
+});
 window.onload = checkLocalStorage;
