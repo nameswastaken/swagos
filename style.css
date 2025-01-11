@@ -11,11 +11,6 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
 }
 
 #app1 {
@@ -95,20 +90,20 @@ body {
 
 #settings {
   cursor: pointer;
-  height: 25px;
-  width: 25px;
+  height: 37px;
+  width: 37px;
   overflow: hidden;
   transition: 0.3s linear;
 }
 
 #settings:hover {
-  width: 30px;
+  width: 40px;
   height: 40px;
 }
 
 #catapp:hover {
-  width: 30px;
-  height: 30px;
+  width: 38px;
+  height: 37px;
 }
 
 @keyframes close {
@@ -143,14 +138,14 @@ body {
 }
 
 #apps img {
-  margin-top: 10px;
+  margin-top: 2px;
 }
 
 /*kitty*/
 #catapp {
   border-radius: 50%;
-  height: 25px;
-  width: 25px;
+  height: 35px;
+  width: 35px;
   overflow: hidden;
   margin-top: 0.3%;
   transition: 0.3s linear;
